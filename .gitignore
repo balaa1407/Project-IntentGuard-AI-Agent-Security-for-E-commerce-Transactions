@@ -7,10 +7,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node dependencies and build artifacts
 node_modules
 dist
 dist-ssr
 *.local
+
+# Python virtual environments & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+*.egg-info/
+.coverage
+
+# SQLite Databases & Local Storage
+*.db
+*.sqlite
+*.sqlite3
+
+# Test artifacts
+test-results/
+playwright-report/
 
 # Editor directories and files
 .vscode/*
@@ -23,4 +45,6 @@ dist-ssr
 *.sln
 *.sw?
 
+# Sensitive Environment Configurations
 .env
+.env*.local
